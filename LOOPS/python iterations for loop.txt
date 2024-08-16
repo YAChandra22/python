@@ -1,0 +1,449 @@
+1) write a program to find the no of elements present in a collection
+a=input('enter the string:') // Mani Theja
+i=0
+for k in a:
+  i=i+1
+print(c) // 10
+
+#     >>in the first line we declare the variable to take the user input 
+# i=0 >>creating i variable with 0 as values because we are assuming the given string must be empty
+# String is mani theja
+>> Iteration1: extracts m and add 1 to i so i becomes 1
+>> Iteration2: extracts a and add 1 to i so i becomes 2
+>> Iteration3: extracts n and add 1 to i so i becomes 3
+>> Iteration4: extracts a and add 1 to i so i becomes 4
+>> Iteration5: extracts ''and add 1 to i so i becomes 5
+>> Iteration6: extracts t and add 1 to i so i becomes 6
+>> Iteration7: extracts h and add 1 to i so i becomes 7
+>> Iteration8: extracts e and add 1 to i so i becomes 8
+>> Iteration9: extracts j and add 1 to i so i becomes 9
+>> Iteration10: extracts a and add 1 to i so i becomes 10
+
+# Atlast print i value as 10
+-----------------------------------------------------------------------------------------------------
+
+2) write a program to find how many times the substring present in a collection
+string=input('enter the string:')  // Mani Theja
+sub=input('enter the substring:')  //  a
+c=0
+for i in string:
+  if i==sub:
+    c=c+1
+print(c)   // output: 2
+
+# Declare the input string
+# Give the substring
+# c=0 >>here we are assuming c=0 because if the user entered substring is not present in the given string it gives zero as output else go to the for loop
+# String is Mani Theja
+# substring is a
+>> Iteration1: extracts m and checks whether it is equal to the substring, if it is equal add 1 to c else skip
+>> Iteration2: extracts a and checks whether it is equal to the substring, if it is equal add 1 to c else skip
+>> Iteration3: extracts n and checks whether it is equal to the substring, if it is equal add 1 to c else skip
+>> Iteration4: extracts i and checks whether it is equal to the substring, if it is equal add 1 to c else skip
+>> Iteration5: extracts '' and checks whether it is equal to the substring, if it is equal add 1 to c else skip
+>> Iteration6: extracts t and checks whether it is equal to the substring, if it is equal add 1 to c else skip
+>> Iteration7: extracts h and checks whether it is equal to the substring, if it is equal add 1 to c else skip
+>> Iteration8: extracts e and checks whether it is equal to the substring, if it is equal add 1 to c else skip
+>> Iteration9: extracts j and checks whether it is equal to the substring, if it is equal add 1 to c else skip
+>> Iteration10: extracts a and checks whether it is equal to the substring, if it is equal add 1 to c else skip
+>> finally print the c value 2.
+-----------------------------------------------------------------------------------------------------
+
+3)# how many vowels present in a string
+a=input('enter the string')
+v='aeiouAEIOU'
+c=0
+for i in a:
+  if i in v:
+    c=c+1
+print(c)
+
+Execution:
+
+>>take input string form the user
+>>initialise variable v with "aeiouAEIOU"
+>>creating c variable with 0 as value because we are assuming that volwels are not present in given string
+>>string is mani theja
+Iterations:
+>> Iteration1: extracts m and checks whether element present in v if it is present add 1 to c otherwise skip
+>> Iteration2: extracts a and checks whether element present in v if it is present add 1 to c otherwise skip
+>> Iteration3: extracts n and checks whether element present in v if it is present add 1 to c otherwise skip
+>> Iteration4: extracts i and checks whether element present in v if it is present add 1 to c otherwise skip
+>> Iteration5: extracts ' ' and checks whether element present in v if it is present add 1 to c otherwise skip
+>> Iteration6: extracts t and checks whether element present in v if it is present add 1 to c otherwise skip
+>> Iteration7: extracts h and checks whether element present in v if it is present add 1 to c otherwise skip
+>> Iteration8: extracts e and checks whether element present in v if it is present add 1 to c otherwise skip
+>> Iteration9: extracts j and checks whether element present in v if it is present add 1 to c otherwise skip
+>> Iteration10: extracts a and checks whether element present in v if it is present add 1 to c otherwise skip
+
+>>finally print c, value is 4.
+-----------------------------------------------------------------------------------------------------
+
+4)# program to print to count the consonats in a string
+a=input('enter the string')
+v='aeiouAEIOU'
+c=0
+for i in a:
+  if not i in v:
+    c=c+1
+print(c)
+
+Execution:
+
+>>take input string form the user
+>>initialise variable v with "aeiouAEIOU"
+>>creating c variable with 0 as value because we are assuming that consonants are not present in given string
+>>string is mani theja
+Iterations:
+>> Iteration1: extracts m and checks whether element not present in v if it is not present add 1 to c otherwise skip
+>> Iteration2: extracts a and checks whether element not present in v if it is not present add 1 to c otherwise skip
+>> Iteration3: extracts n and checks whether element not present in v if it is not present add 1 to c otherwise skip
+>> Iteration4: extracts i and checks whether element not present in v if it is not present add 1 to c otherwise skip
+>> Iteration5: extracts '' and checks whether element not present in v if it is not present add 1 to c otherwise skip
+>> Iteration6: extracts t and checks whether element not present in v if it is not present add 1 to c otherwise skip
+>> Iteration7: extracts h and checks whether element not present in v if it is not present add 1 to c otherwise skip
+>> Iteration8: extracts e and checks whether element not present in v if it is not present add 1 to c otherwise skip
+>> Iteration9: extracts j and checks whether element not present in v if it is not present add 1 to c otherwise skip
+>> Iteration10: extracts a and checks whether element not present in v if it is not present add 1 to c otherwise skip
+
+>>finally print c, value is 5.
+-----------------------------------------------------------------------------------------------------
+5)# How many integers present in a string
+s=input('enter the string')
+c=0
+for i in s:
+  if i.isdigit():
+    c=c+1
+print(c)
+
+Execution:
+
+>>take input string form the user
+>>creating c variable with 0 as value because we are assuming that integers are not present in given string
+>>string is mani123
+Iterations:
+>> Iteration1: extracts m and checks whether element is digit or not if it is digit add 1 to c otherwise skip
+>> Iteration2: extracts a and checks whether element is digit or not if it is digit add 1 to c otherwise skip
+>> Iteration3: extracts n and checks whether element is digit or not if it is digit add 1 to c otherwise skip
+>> Iteration4: extracts i and checks whether element is digit or not if it is digit add 1 to c otherwise skip
+>> Iteration5: extracts 1 and checks whether element is digit or not if it is digit add 1 to c otherwise skip
+>> Iteration6: extracts 2 and checks whether element is digit or not if it is digit add 1 to c otherwise skip
+>> Iteration7: extracts 3 and checks whether element is digit or not if it is digit add 1 to c otherwise skip
+>>finally print c, value is 3.
+-----------------------------------------------------------------------------------------------------
+
+6)# To print sum of Integers in a string
+s1=input('Enter the string')
+summ=0
+for i in s1:
+  if i.isdigit():
+    k=int(i)
+    summ+=k
+print(summ)
+
+Execution:
+
+>>take input string form the user
+>>creating summ variable with 0 as value because we are assuming that integers are not present in given string
+>>string is mani123
+Iterations:
+>> Iteration1: extracts m and checks whether element is digit or not if it is digit type cast into integer and store in k, add k to summ otherwise skip
+>> Iteration2: extracts a and checks whether element is digit or not if it is digit type cast into integer and store in k, add k to summ otherwise skip
+>> Iteration3: extracts n and checks whether element is digit or not if it is digit type cast into integer and store in k, add k to summ otherwise skip
+>> Iteration4: extracts i and checks whether element is digit or not if it is digit type cast into integer and store in k, add k to summ otherwise skip
+>> Iteration5: extracts 1 and checks whether element is digit or not if it is digit type cast into integer and store in k, add k to summ otherwise skip
+>> Iteration6: extracts 2 and checks whether element is digit or not if it is digit type cast into integer and store in k, add k to summ otherwise skip
+>> Iteration7: extracts 4 and checks whether element is digit or not if it is digit add 1 to c otherwise skip
+
+>>finally print summ, value is 7.
+-----------------------------------------------------------------------------------------------------
+
+7)# How many Vowels and consants in the string
+s=input('enter the string')
+v='aeiouAeiou'
+vc=0
+cc=0
+for i in s:
+  if i.isalpha():
+    if i in v:
+      vc=vc+1
+    else:
+      cc=cc+1
+print(vc,cc)
+
+Execution:
+
+>>take input string form the user
+>>initialise variable v with "aeiouAEIOU"
+>>creating vc and cc variables with 0 as value because we are assuming that alphabets may not present or string may be empty
+>>string is 'mani theja'
+Iterations:
+>> Iteration1: extracts m and checks whether element is alphabet or not if it is alphabet check whether element present in v if present add 1 to vc else add 1 to cc otherwise skip
+>> Iteration2: extracts a and checks whether element is alphabet or not if it is alphabet check whether element present in v if present add 1 to vc else add 1 to cc otherwise skip
+>> Iteration3: extracts n and checks whether element is alphabet or not if it is alphabet check whether element present in v if present add 1 to vc else add 1 to cc otherwise skip
+>> Iteration4: extracts i and checks whether element is alphabet or not if it is alphabet check whether element present in v if present add 1 to vc else add 1 to cc otherwise skip
+>> Iteration5: extracts '' and checks whether element is alphabet or not if it is alphabet check whether element present in v if present add 1 to vc else add 1 to cc otherwise skip
+>> Iteration6: extracts t and checks whether element is alphabet or not if it is alphabet check whether element present in v if present add 1 to vc else add 1 to cc otherwise skip
+>> Iteration3: extracts h and checks whether element is alphabet or not if it is alphabet check whether element present in v if present add 1 to vc else add 1 to cc otherwise skip
+>> Iteration4: extracts e and checks whether element is alphabet or not if it is alphabet check whether element present in v if present add 1 to vc else add 1 to cc otherwise skip
+>> Iteration5: extracts j and checks whether element is alphabet or not if it is alphabet check whether element present in v if present add 1 to vc else add 1 to cc otherwise skip
+>> Iteration6: extracts a and checks whether element is alphabet or not if it is alphabet check whether element present in v if present add 1 to vc else add 1 to cc otherwise skip
+
+>>finally print vc,cc, value is 4,5.
+-----------------------------------------------------------------------------------------------------
+
+8)# program to print sum of even digits in a string
+s=input('enter the string')
+evenn=0
+for i in s:
+  if i.isdigit():
+    k=int(i)
+    if k%2==0:
+      evenn=evenn+k
+print(evenn)
+
+Execution:
+
+>>take input string form the user
+>>creating evenn variable with 0 as value because we are assuming that even integers are not present in given string
+>>string is hai1245
+Iterations:
+>> Iteration1: extracts h and checks whether element is digit or not if it is digit type cast into integer and store in k, check k is even or not if it is even add k to evenn otherwise skip
+>> Iteration2: extracts a and checks whether element is digit or not if it is digit type cast into integer and store in k, check k is even or not if it is even add k to evenn otherwise skip
+>> Iteration3: extracts i and checks whether element is digit or not if it is digit type cast into integer and store in k, check k is even or not if it is even add k to evenn otherwise skip
+>> Iteration4: extracts 1 and checks whether element is digit or not if it is digit type cast into integer and store in k, check k is even or not if it is even add k to evenn otherwise skip
+>> Iteration5: extracts 2 and checks whether element is digit or not if it is digit type cast into integer and store in k, check k is even or not if it is even add k to evenn otherwise skip
+>> Iteration6: extracts 4 and checks whether element is digit or not if it is digit type cast into integer and store in k, check k is even or not if it is even add k to evenn otherwise skip
+>> Iteration7: extracts 5 and checks whether element is digit or not if it is digit type cast into integer and store in k, check k is even or not if it is even add k to evenn otherwise skip
+>>finally print evenn, value is 6.
+-----------------------------------------------------------------------------------------------------
+
+9)#program to print the special characters in a string
+s=input('enter the string')
+sc=0
+for i in s:
+  if not i.isalnum():
+    sc+=1
+print(sc)
+
+Execution:
+
+>>take input string form the user
+>>creating sc variable with 0 as value because we are assuming that special characters are not present in given string
+>>string is m@a#ni
+Iterations:
+>> Iteration1: extracts m and checks whether element is not alnum if it is add 1 to sc otherwise skip
+>> Iteration2: extracts @ and checks whether element is not alnum if it is add 1 to sc otherwise skip
+>> Iteration3: extracts a and checks whether element is not alnum if it is add 1 to sc otherwise skip
+>> Iteration4: extracts # and checks whether element is not alnum if it is add 1 to sc otherwise skip
+>> Iteration5: extracts n and checks whether element is not alnum if it is add 1 to sc otherwise skip
+>> Iteration6: extracts i and checks whether element is not alnum if it is add 1 to sc otherwise skip
+>>finally print sc, value is 2.
+-----------------------------------------------------------------------------------------------------
+10)# program to print absolute difference between sum of even digits and odd digits
+s=input('enter the string')
+ec=0
+oc=0
+for i in s:
+  if i.isdigit():
+    k=int(i)
+    if k%2==0:
+      ec=ec+k
+    else:
+      oc=oc+k
+print(abs(ec-oc))
+
+Execution:
+
+>>take input string form the user
+>>creating ec and oc variables with 0 as values because we are assuming that even or odd digits are not present in given string
+>>string is hai123
+Iterations:
+>> Iteration1: extracts h and checks whether element is digit or not if it is digit type cast into integer and store in k and check whether k is even if it is add k to ec else add k to oc otherwise skip
+>> Iteration2: extracts a and checks whether element is digit or not if it is digit type cast into integer and store in k and check whether k is even if it is add k to ec else add k to oc otherwise skip
+>> Iteration3: extracts i and checks whether element is digit or not if it is digit type cast into integer and store in k and check whether k is even if it is add k to ec else add k to oc otherwise skip
+>> Iteration4: extracts 1 and checks whether element is digit or not if it is digit type cast into integer and store in k and check whether k is even if it is add k to ec else add k to oc otherwise skip
+>> Iteration5: extracts 2 and checks whether element is digit or not if it is digit type cast into integer and store in k and check whether k is even if it is add k to ec else add k to oc otherwise skip
+>> Iteration6: extracts 3 and checks whether element is digit or not if it is digit type cast into integer and store in k and check whether k is even if it is add k to ec else add k to oc otherwise skip
+>>finally print absolute value of ec and oc, value is 2.
+-----------------------------------------------------------------------------------------------------
+
+10) program to print sum of first n numbers in range
+n=int(input())
+s=0
+for i in range(1,n+1):
+    s=s+i
+print(s)
+
+Execution:
+
+>>take input number from the user
+>>creating s variable with 0 as values because we are assuming that input is 0
+>>number is 5
+Iterations:
+>> Iteration1: extracts 1 and add to s
+>> Iteration2: extracts 2 and add to s
+>> Iteration3: extracts 3 and add to s
+>> Iteration4: extracts 4 and add to s
+>> Iteration5: extracts 5 and add to s
+>>finally print s, value is 2.
+-------------------------------------------------------------------------------------------------------
+
+11) program to print factorial of given  number 
+n=int(input())
+f=1
+for i in range(1,n+1):
+    f=f*i
+print(f)
+
+Execution:
+
+>>take input number from the user
+>>creating f variable with 1 as values because 0! is 1
+>>number is 5
+Iterations:
+>> Iteration1: extracts 1 and multiply it to f and store in f
+>> Iteration2: extracts 2 and multiply it to f and store in f
+>> Iteration3: extracts 3 and multiply it to f and store in f
+>> Iteration4: extracts 4 and multiply it to f and store in f
+>> Iteration5: extracts 5 and multiply it to f and store in f
+>>finally print f, value is 120.
+--------------------------------------------------------------------------------------
+
+13) program to check given number perfect or not 
+n=int(input())
+s=0
+for i in range(1,n//2+1):
+    if n%i==0:
+        s=s+1
+if s==n:
+   print("perfect number")
+print("not perfect number")
+
+Execution:
+
+>>take input number from the user
+>>creating s variable with 0 as value because we are assuming that input is 0
+>>number is 6
+Iterations:
+>> Iteration1: extracts 1 and check it divides given number if it is add it to s
+>> Iteration2: extracts 2 and check it divides given number if it is add it to s
+>> Iteration3: extracts 3 and check it divides given number if it is add it to s
+>> coming out of loop check s is equals to given number if it is print perfect number 
+>>else print not perfect number.
+output is perfect number
+--------------------------------------------------------------------------------------------------
+
+
+14) program to print altenate even numbers in given range 
+ll=int(input())
+ul=int(input())
+c=0
+for n in range(ll,ul+1):
+    if n%2==0:
+        c=c+1
+        if c%2!=0:
+           print(n)
+
+Execution:
+
+>>take two inputs ll and ul from the user
+>>creating c variable with 0 
+>>lower limit ll is 1
+>>upper limit ul is 6
+Iterations:
+>> Iteration1: extracts 1 and check it is even or not if it is add it to c and check c odd or not if it is print n
+>> Iteration2: extracts 2 and check it is even or not if it is add it to c and check c odd or not if it is print n
+>> Iteration3: extracts 3 and check it is even or not if it is add it to c and check c odd or not if it is print n
+>> Iteration4: extracts 4 and check it is even or not if it is add it to c and check c odd or not if it is print n
+>> Iteration5: extracts 5 and check it is even or not if it is add it to c and check c odd or not if it is print n
+>> Iteration5: extracts 6 and check it is even or not if it is add it to c and check c odd or not if it is print n
+output is:2
+          6
+---------------------------------------------------------------------------------------------------------------------------
+
+
+15) program to print even numbers in given range 
+ll=int(input())
+ul=int(input())
+for n in range(ll,ul+1):
+    if n%2==0:
+        print(n)
+
+Execution:
+
+>>take two inputs ll and ul from the user
+>>creating c variable with 0 
+>>lower limit ll is 1
+>>upper limit ul is 5
+Iterations:
+>> Iteration1: extracts 1 and check it is even or not if it is print n
+>> Iteration2: extracts 2 and check it is even or not if it is print n
+>> Iteration3: extracts 3 and check it is even or not if it is print n
+>> Iteration4: extracts 4 and check it is even or not if it is print n
+>> Iteration5: extracts 5 and check it is even or not if it is print n
+output is:2
+          4
+---------------------------------------------------------------------------------------------------------------------------
+
+16) program to print every second even numbers in given range 
+ll=int(input())
+ul=int(input())
+c=0
+for n in range(ll,ul+1):
+    if n%2==0:
+        c=c+1
+        if c%2==0:
+           print(n)
+
+Execution:
+
+>>take two inputs ll and ul from the user
+>>creating c variable with 0 
+>>lower limit ll is 1
+>>upper limit ul is 6
+Iterations:
+>> Iteration1: extracts 1 and check it is even or not if it is add it to c and check c even or not if it is print n
+>> Iteration2: extracts 2 and check it is even or not if it is add it to c and check c even or not if it is print n
+>> Iteration3: extracts 3 and check it is even or not if it is add it to c and check c even or not if it is print n
+>> Iteration4: extracts 4 and check it is even or not if it is add it to c and check c even or not if it is print n
+>> Iteration5: extracts 5 and check it is even or not if it is add it to c and check c even or not if it is print n
+>> Iteration5: extracts 6 and check it is even or not if it is add it to c and check c even or not if it is print n
+output is:2
+-------------------------------------------------------------------------------------------------------------------------------
+
+17) program to print every third even numbers in given range 
+ll=int(input())
+ul=int(input())
+c=0
+for n in range(ll,ul+1):
+    if n%2==0:
+        c=c+1
+        if c%3==0:
+           print(n)
+
+Execution:
+
+>>take two inputs ll and ul from the user
+>>creating c variable with 0 
+>>lower limit ll is 1
+>>upper limit ul is 6
+Iterations:
+>> Iteration1: extracts 1 and check it is even or not if it is add it to c and check c odd or not if it is print n
+>> Iteration2: extracts 2 and check it is even or not if it is add it to c and check c odd or not if it is print n
+>> Iteration3: extracts 3 and check it is even or not if it is add it to c and check c odd or not if it is print n
+>> Iteration4: extracts 4 and check it is even or not if it is add it to c and check c odd or not if it is print n
+>> Iteration5: extracts 5 and check it is even or not if it is add it to c and check c odd or not if it is print n
+>> Iteration5: extracts 6 and check it is even or not if it is add it to c and check c odd or not if it is print n
+output is:2
+----------------------------------------------------------------------------------------------------------------------------
+
+for n in range(ll,ul+1):
+    if n%2==0:
+        c=c+1
+        if c%3==0:
+           print(n)
+
+
+
+
